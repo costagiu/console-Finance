@@ -91,3 +91,12 @@ var finances = [
 let size = finances.length;
 
 console.log ("Total Months: " + size)
+
+// 2) The net total amount of Profit/Losses over the entire period
+
+let net_total = 0;
+for ( let row of finances){
+   net_total = net_total +  row [1]
+}
+
+ console.log ("Total: $" + net_total);
