@@ -116,4 +116,35 @@ for ( let row of finances){
  }
  console.log (total/( size - 1));
  
+ //The greatest increase in Profit/Losses (date and amount) over the entire period.
  
+ let greatest = 0;
+ 
+ for ( let i = 1; i < finances.length; i = i + 1) {
+   let row = finances[i];
+   let previous_row = finances[i-1];
+ 
+   let change = row [1] - previous_row[1];
+ 
+  if ( change < greatest) {}
+    else  if (change > greatest)
+          greatest = change 
+ }
+ console.log ("Greatest Increase in Profits/Losses:", greatest);
+ 
+ 
+ //The greatest decrease in Profit/Losses (date and amount) over the entire period.
+ 
+ let decrease = 0;
+ 
+ for ( let i = 1; i < finances.length; i = i + 1) {
+   let row = finances[i];
+   let previous_row = finances[i-1];
+ 
+   let change = row [1] - previous_row[1];
+ 
+  if ( change > decrease) {}
+    else  if (change < decrease)
+          decrease = change 
+ }
+ console.log ("Greatest Decrease in Profits/Losses:", decrease);
