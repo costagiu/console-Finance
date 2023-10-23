@@ -114,7 +114,7 @@ for ( let row of finances){
   total = total + change;
  
  }
- console.log ("Average Change:", total/(size - 1));
+ console.log ("Average Change: " + total/(size - 1));
  
  //The greatest increase in Profit/Losses (date and amount) over the entire period.
  
@@ -130,7 +130,7 @@ for ( let row of finances){
     else  if (change > greatest)
           greatest = change 
  }
- console.log ("Greatest Increase in Profits/Losses:", greatest);
+ console.log ("Greatest Increase in Profits/Losses: " + greatest);
  
  
  //The greatest decrease in Profit/Losses (date and amount) over the entire period.
@@ -147,4 +147,4 @@ for ( let row of finances){
     else  if (change < decrease)
           decrease = change 
  }
- console.log ("Greatest Decrease in Profits/Losses:", decrease);
+ console.log ("Greatest Decrease in Profits/Losses: " + decrease);
