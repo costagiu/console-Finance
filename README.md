@@ -20,3 +20,5 @@ Credits
 I used W3Schools as a reference for Javascript.
 
 I used codingbootcamp as a guide to write this README.
+
+I used stackoverflow for rounding.

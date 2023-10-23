@@ -114,7 +114,9 @@ for ( let row of finances){
   total = total + change;
  
  }
- console.log ("Average Change: " + total/(size - 1));
+ // found on https://stackoverflow.com/a/60869817
+ let average = total/(size - 1);
+ console.log ("Average Change: " + Number(average.toFixed(2)));
  
  //The greatest increase in Profit/Losses (date and amount) over the entire period.
  
