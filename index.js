@@ -100,3 +100,20 @@ for ( let row of finances){
 }
 
  console.log ("Total: $" + net_total);
+
+ // 3) The average of the **changes** in Profit/Losses over the entire period.
+
+ let total = 0;
+ // for every position in the array 
+ for ( let i = 1; i < finances.length; i = i + 1) {
+   let row = finances[i];
+   let previous_row = finances[i-1];
+   // calculate the difference
+   let change = row [1] - previous_row[1];
+  // we start from index 1 not 0. and we subtract the index before.
+  total = total + change;
+ 
+ }
+ console.log (total/( size - 1));
+ 
+ 
